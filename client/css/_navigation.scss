@@ -1,0 +1,303 @@
+nav .nav_top {
+    padding: 10px 0;
+}
+
+nav .nav_bottom {
+    border-top: 1px solid #ecefef;
+    box-shadow: 0 2px 2px rgba(11, 25, 28, 0.12);
+    padding: 14px 0 0;
+    position: relative;
+}
+
+nav .nav_top_left ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav_top_left ul li:first-child {
+    border-left: medium none;
+    padding-left: 0;
+}
+
+nav .nav_top_left ul li {
+    border-left: 1px solid #f1f3f3;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 15px;
+}
+
+nav .nav_top_left ul li a {
+    color: #898989;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav_top_left ul li a:hover {
+    color: #5DBBF1;
+}
+
+nav .nav_top_right {
+    float: right;
+}
+
+nav .nav_top_right ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav_top_right ul li:first-child {
+    border-left: medium none;
+    padding-left: 0;
+}
+
+nav .nav_top_right ul li {
+    border-left: 1px solid #f1f3f3;
+    color: #898989;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+nav .nav_top_right i {
+    color: #A4B25B;
+}
+
+nav .nav_top_right i {
+    color: #A4B25B;
+}
+
+nav .nav_bottom .right_menu {
+	z-index: 788;
+    float: right;
+    padding-bottom: 11px;
+    padding-top: 5px;
+    position: relative;
+}
+
+nav .nav_bottom .right_menu > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav_bottom .right_menu > ul > li {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+}
+
+nav .nav_bottom .right_menu > ul > li > a {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 #c9cbcb, 0 1px 0 #fff inset;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 30px;
+}
+
+nav .nav_bottom .right_menu > ul > li > a *::after {
+    background-color: #edefef;
+    border-radius: 50%;
+    bottom: -3px;
+    box-shadow: 0 1px #fff, 0 1px #c9cbcb inset;
+    content: "";
+    display: block;
+    left: -3px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: -1;
+}
+
+nav .nav_bottom .right_menu > ul > li > a span {
+    color: #282727;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+nav .nav_bottom .cart_menu {
+    width: 670px;
+}
+
+nav .nav_bottom .menu_c {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(11, 25, 28, 0.1);
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 62px;
+    z-index: 99;
+}
+
+nav .nav_bottom .menu_title {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 25px;
+}
+
+nav .nav_bottom .cart_menu .cart_row {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav .nav_bottom .cart_menu ul {
+    display: table-row;
+}
+
+nav .nav_bottom .cart_menu ul li {
+    border-bottom: 1px solid #efefef;
+    display: table-cell;
+    float: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+
+nav .nav_bottom .cart_menu ul li:nth-child(1) {
+    padding-left: 25px;
+    width: 20%;
+}
+
+nav .nav_bottom .cart_menu ul li:nth-child(2) {
+    width: 54%;
+}
+
+nav .nav_bottom .cart_menu ul li:nth-child(3) {
+    padding-right: 25px;
+    width: 26%;
+}
+
+nav .nav_bottom .cart_menu ul li .pro_img {
+    border: 1px solid #efefef;
+    height: 80px;
+    padding: 4px;
+    width: 80px;
+}
+
+nav .nav_bottom .cart_menu ul li .pro_img span {
+    background: #dcdcdc none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+nav .nav_bottom .cart_menu .cheout_row {
+    padding: 25px;
+}
+
+nav .nav_bottom .cart_menu .checkout-btn {
+    border: medium none;
+    border-radius: 18px;
+    color: #fff;
+    display: block;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: -1px -1px 1px #2f8aab;
+    width: 122px;
+}
+
+nav .nav_bottom .cart_menu ul li .price {
+    float: left;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav_bottom .cart_menu ul li .del_btn {
+    background: rgba(0, 0, 0, 0) url("../images/delete_icon.png") no-repeat scroll center center;
+    display: block;
+    float: right;
+    height: 30px;
+    width: 30px;
+}
+
+nav .nav_bottom  .dropdown-menu {
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+nav .dropdown-menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav .dropdown-menu ul li a {
+    color: #a4b25b;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #fff;
+    color: #A4B25B;
+}
+
+nav .nav_bottom .dropdown {
+    position: static;
+}
+
+.menu_cshow .menu_c {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_c {
+    display: block !important;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    visibility: hidden;
+}
+
+.brand {
+	float: left;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'CleanvertisingBlack';
+	text-transform: uppercase;
+	padding: 13px 15px 23px; 
+	color: #282727;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: inherit;
+    color: #A4B25B;
+}
