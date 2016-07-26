@@ -1,0 +1,42 @@
+@import "{}/node_modules/bootstrap/scss/bootstrap.scss";
+@import "main-variables";
+@import "mixins/fonts";
+@import "navigation";
+@import "navigation-responsive";
+
+@font-face {
+    font-family: 'CleanvertisingLight';
+    src: url('/fonts/CleanvertisingLight.eot');
+    src: url('/fonts/CleanvertisingLight.eot?#iefix')format('embedded-opentype'),
+    url('/fonts/CleanvertisingLight.woff') format('woff'),
+    url('/fonts/CleanvertisingLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CleanvertisingBlack';
+    src: url('/fonts/CleanvertisingBlack.eot');
+    src: url('/fonts/CleanvertisingBlack.eot?#iefix')format('embedded-opentype'),
+    url('/fonts/CleanvertisingBlack.woff') format('woff'),
+    url('/fonts/CleanvertisingBlack.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    @extend html;
+	background-color: $gray-lighter;
+    font-family: 'CleanvertisingLight';
+}
+
+ul li {
+    list-style: outside none none;
+}
+
