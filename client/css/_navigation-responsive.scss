@@ -23,6 +23,10 @@
 	nav .nav_top .nav_top_right {
     	float: right;
 	}
+
+	nav .nav_bottom .nav_bottom_right {
+		padding: 5px 0 0 11px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -47,9 +51,6 @@
 		text-align: center;
 		margin: 0 auto;
 	} 
-	nav .nav_bottom .nav_bottom_right {
-		float: left;
-	}
 	nav .nav_bottom .cart_menu {
 		width: 450px;
 	}

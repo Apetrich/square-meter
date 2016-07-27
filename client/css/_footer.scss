@@ -1,0 +1,119 @@
+footer .footer-top {
+	background: #ffffff;
+}
+
+footer .footer-top .ftop_blk {
+    border-right: 1px solid #efefef;
+    padding: 20px 60px 20px 0;
+    position: relative;
+}
+
+footer .footer-top .bor_none {
+    border-right: none
+}
+
+footer .footer-top h5 {
+    color: $gray-dark;
+}
+
+footer .footer-middle {
+	background: #ffffff;
+    border-top: 1px solid #efefef;
+    box-shadow: 0 3px 3px #d1d7d7;
+    padding: 45px 0 55px;
+    position: relative;
+}
+
+footer .footer-middle h4 {
+    color: $gray-dark;
+	font-weight: bold;
+    padding: 0 0 22px;
+}
+
+footer .footer-middle .desc {
+    color: $gray-light;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0 0 25px;
+}
+
+footer .footer-middle p strong {
+    color: $gray-light;
+}
+
+footer  a, footer  a:hover, footer  a:focus {
+	color: $color-primary;
+}
+
+footer  a.fa {
+	text-decoration: none;
+}
+
+footer .footer-middle .partner ul {
+	padding: 0;
+}
+
+footer .footer-middle .partner ul li {
+    margin: 0;
+	list-style: none;
+}
+
+footer .footer-middle .social {
+    padding: 30px 0 0;
+}
+
+footer .footer-middle .social ul li a span {
+    color: $gray-light;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+footer .footer-middle .social ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-middle .social ul li {
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+}
+
+footer .footer-middle .social ul li a {
+    border: 1px solid #d7dbdb;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+	transition: all 0.3s ease 0s;
+}
+
+footer .footer-middle .social ul li.facebook a:hover {
+    background-color: $color-facebook;
+}
+
+footer .footer-middle .social ul li.twitter a:hover {
+    background-color: $color-tweeter;
+}
+
+footer .footer-middle .social ul li.insta a:hover {
+    background-color: $color-insta;
+}
+
+footer .footer-middle .social ul li.facebook a:hover > span,
+footer .footer-middle .social ul li.twitter a:hover > span,
+footer .footer-middle .social ul li.insta a:hover > span {
+	color: #fff;
+}
+
+footer .footer-bottom {
+    padding: 30px 0;
+}
+
+footer .footer-middle .partner ul li {
+	padding: 0 10px;
+	float: left;
+}
