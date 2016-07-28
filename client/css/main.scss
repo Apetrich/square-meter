@@ -4,6 +4,8 @@
 @import "navigation";
 @import "navigation-responsive";
 @import "footer";
+@import "footer-responsive";
+@import "home";
 
 @font-face {
     font-family: 'CleanvertisingLight';
@@ -41,3 +43,26 @@ ul li {
     list-style: outside none none;
 }
 
+h5 {
+	color: #000;
+    font-size: 14px;
+	font-family: 'CleanvertisingBlack';
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h2 {
+    color: $gray-dark;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}

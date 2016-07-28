@@ -1,0 +1,123 @@
+.carousel-caption {
+	animation: 2s ease 0s normal none 1 running slideIn;
+    left: 50% !important;
+    margin: -200px 0 0 -440px;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+	text-shadow: none;
+	padding: 0;
+}
+
+.carousel-caption-inner {
+	background: rgba(245, 245, 245, 0.8) none repeat scroll 0 0;
+	height: 415px;
+	width: 830px;
+	padding: 50px 0 0;
+}
+
+.carousel-caption-inner h1 {
+    padding: 0;
+	color: #282727;
+    font-size: 36px;
+    font-weight: normal;
+	margin: 30px 0;
+    text-transform: uppercase;
+	font-family: 'CleanvertisingBlack';
+}
+
+.carousel-caption-inner .line_1 {
+    background: #e79227 none repeat scroll 0 0;
+    height: 2px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.carousel-caption-inner h4 {
+    color: #282727;
+    font-family: "latobold";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+	margin-top: 30px;
+}
+
+.carousel-caption-inner p {
+    color: #282727;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0;
+	margin: 0;
+}
+
+.carousel-controls a::before {
+    background-color: #edefef;
+    border-radius: 50%;
+    bottom: -3px;
+    box-shadow: 0 1px #fff, 0 1px #c9cbcb inset;
+    content: "";
+    display: block;
+    left: -3px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: -1;
+}
+.carousel-controls .fa {
+    color: #282727;
+}
+.carousel-controls .fa:hover {
+    color: #428bca;
+}
+.carousel-controls a {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 #c9cbcb, 0 1px 0 #fff inset;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 30px;
+	z-index: 3;
+}
+
+.news {
+    padding-top: 110px;
+	padding-bottom: 20px;
+    text-align: center;
+	background: #fff;
+}
+
+.ideas {
+	margin-top: 60px;
+}
+
+.ideas a.thumbnail,
+.ideas a.thumbnail,
+.ideas a.thumbnail
+{
+	border-color: #fff;
+}
+
+.intro {
+	margin: 50px 0 100px 0;
+}
+
+.catalog  {
+	margin-bottom: 60px;
+}
+
+
+.intro h1 {
+    text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.intro p {
+    text-align: center;
+}

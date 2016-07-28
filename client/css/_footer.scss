@@ -3,13 +3,8 @@ footer .footer-top {
 }
 
 footer .footer-top .ftop_blk {
-    border-right: 1px solid #efefef;
     padding: 20px 60px 20px 0;
     position: relative;
-}
-
-footer .footer-top .bor_none {
-    border-right: none
 }
 
 footer .footer-top h5 {
@@ -18,7 +13,7 @@ footer .footer-top h5 {
 
 footer .footer-middle {
 	background: #ffffff;
-    border-top: 1px solid #efefef;
+    border-top: 1px solid $gray-lighter;
     box-shadow: 0 3px 3px #d1d7d7;
     padding: 45px 0 55px;
     position: relative;
