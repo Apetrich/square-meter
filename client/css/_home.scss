@@ -18,7 +18,7 @@
 
 .carousel-caption-inner h1 {
     padding: 0;
-	color: #282727;
+	color: $gray-dark;
     font-size: 36px;
     font-weight: normal;
 	margin: 30px 0;
@@ -27,14 +27,14 @@
 }
 
 .carousel-caption-inner .line_1 {
-    background: #e79227 none repeat scroll 0 0;
+    background: $color-info none repeat scroll 0 0;
     height: 2px;
     margin: 0 auto;
     width: 200px;
 }
 
 .carousel-caption-inner h4 {
-    color: #282727;
+    color: $gray-dark;
     font-family: "latobold";
     font-size: 18px;
     font-weight: normal;
@@ -43,7 +43,7 @@
 }
 
 .carousel-caption-inner p {
-    color: #282727;
+    color: $gray-dark;
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
@@ -86,8 +86,11 @@
 	z-index: 3;
 }
 
+.carousel-item {
+    max-height: 600px;
+}
+
 .news {
-    padding-top: 110px;
 	padding-bottom: 20px;
     text-align: center;
 	background: #fff;
@@ -97,11 +100,10 @@
 	margin-top: 60px;
 }
 
-.ideas a.thumbnail,
-.ideas a.thumbnail,
-.ideas a.thumbnail
+.ideas .img-thumbnail
 {
 	border-color: #fff;
+    margin-bottom: 20px;
 }
 
 .intro {
@@ -120,4 +122,83 @@
 
 .intro p {
     text-align: center;
+}
+
+.product-box {
+	background: #fff none repeat scroll 0 0; 
+	border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(11, 25, 28, 0.1);
+	margin-bottom: 30px;
+}
+
+.product-box .box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.product-box .box img {
+    height: auto;
+    width: 100%;
+}
+
+.product-box .box .overlay {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.product-box:hover .box .overlay {
+	opacity: 1;
+}
+
+.product-box .box a.info_btn, .product-box .box a.cart_btn_1 {
+	// margin: -100px auto 10px;
+    // transition: all 0.5s ease 0s;
+}
+
+.product-box .box a.info_btn:hover, .product-box .box a.cart_btn_1:hover {
+	color: #fff;
+}
+
+.product-box:hover .box a.cart_btn_1 {
+    margin: 50px auto 10px;
+}
+
+.product-box:hover .box img {
+    transform: scale(1.2);
+}
+.product-box:hover .box img {
+    transition: all 0.5s ease 0s;
+}
+.product-box:hover .box img {
+    height: auto;
+    width: 100%;
+}
+
+.product-box .d-box {
+	padding: 18px;
+}
+
+.product-box .d-box h5 a {
+    color: #282727;
+}
+
+.product-box .d-box  p {
+    color: #898989;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 0 14px;
+}
+
+.product-box .d-box .price {
+    color: #a4b25b;
+    font-size: 18px;
+	font-weight: bold;
+    line-height: 22px;
 }

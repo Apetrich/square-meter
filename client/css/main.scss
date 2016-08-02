@@ -6,6 +6,7 @@
 @import "footer";
 @import "footer-responsive";
 @import "home";
+@import "home-responsive";
 
 @font-face {
     font-family: 'CleanvertisingLight';
@@ -65,4 +66,42 @@ h2 {
     line-height: normal;
     margin: 0;
     padding: 0;
+}
+
+
+.btn_c {
+    background: #37bbec none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto 0;
+    position: relative;
+    text-align: center;
+    text-shadow: -1px -1px 1px #2f8aab;
+    width: 130px;
+	background: $color-primary none repeat scroll 0 0;
+    text-shadow: none !important;
+}
+
+a.btn_c {
+	text-decoration: none;
+}
+
+a.btn_c  :hover, a.btn_c  :focus {
+	color: #ffffff;
+}
+
+.btn_c.info_btn, .btn_c.btn_c2 {
+    background: $color-info none repeat scroll 0 0;
+}
+
+.btn_c.cart_btn_1, .checkout-btn {
+    background: $color-primary none repeat scroll 0 0;
+    text-shadow: none !important;
 }

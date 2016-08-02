@@ -4,6 +4,7 @@ import { bootstrap } from 'angular2-meteor-auto-bootstrap';
 import { provideRouter, RouterConfig, ROUTER_DIRECTIVES } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { Home } from './imports/home/home.ts';
+import { Catalog } from './imports/catalog/catalog.ts';
 
 import template from './app.html';
 
@@ -19,6 +20,7 @@ class SquareMeter {
 
 const routes: RouterConfig = [
   { path: '', component: Home },
+  { path: 'catalog', component: Catalog }
 ];
 
 const APP_ROUTER_PROVIDERS = [

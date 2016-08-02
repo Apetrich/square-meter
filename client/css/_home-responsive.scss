@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+	.intro-section {
+		padding-top: 183px;
+	}
+
+}
+
+@media (max-width: 480px) {
+	.intro-section {
+		padding-top: 207px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.carousel-caption {
+		display: none;
+	}
+	.carousel-controls {
+		display: none;
+	}
+}
