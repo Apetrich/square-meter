@@ -31,7 +31,7 @@
     <div class="nav_bottom">
         <div class="container">
             <div class="brand">
-                <a href="Home.html">
+                <a [routerLink]="['home']">
                     <img src="/logo.png" alt="alt">
                 </a>		
             </div>
@@ -87,10 +87,10 @@
                                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                                                 <ul>
                                                     <li>
-                                                        <a href="home.html">Новинки</a>
+                                                        <a [routerLink]="['catalog']">Каталог</a>
                                                     </li>
                                                     <li>
-                                                        <a href="offer.html">Типовые решения</a>
+                                                        <a href="offer.html">Идеи</a>
                                                     </li>
                                                 </ul>
                                             </div>

@@ -7,6 +7,8 @@
 @import "footer-responsive";
 @import "home";
 @import "home-responsive";
+@import "catalog";
+@import "item";
 
 @font-face {
     font-family: 'CleanvertisingLight';
@@ -104,4 +106,86 @@ a.btn_c  :hover, a.btn_c  :focus {
 .btn_c.cart_btn_1, .checkout-btn {
     background: $color-primary none repeat scroll 0 0;
     text-shadow: none !important;
+}
+
+
+//------------------PRODUCT BOX----------------------------
+.product-box {
+	background: #fff none repeat scroll 0 0; 
+	border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(11, 25, 28, 0.1);
+	margin-bottom: 30px;
+}
+
+.product-box .box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.product-box .box img {
+    height: auto;
+    width: 100%;
+}
+
+.product-box .box .overlay {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.product-box:hover .box .overlay {
+	opacity: 1;
+}
+
+.product-box .box a.info_btn, .product-box .box a.cart_btn_1 {
+	// margin: -100px auto 10px;
+    // transition: all 0.5s ease 0s;
+}
+
+.product-box .box a.info_btn:hover, .product-box .box a.cart_btn_1:hover {
+	color: #fff;
+}
+
+.product-box:hover .box a.cart_btn_1 {
+    margin: 50px auto 10px;
+}
+
+.product-box:hover .box img {
+    height: auto;
+    width: 100%;
+}
+
+.product-box .d-box {
+	padding: 18px;
+}
+
+.product-box .d-box h5 a {
+    color: $gray-dark;
+}
+
+.product-box .d-box  p {
+    color: $gray-light;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 0 14px;
+}
+
+.product-box .product-box-bottom {
+    font-size: 18px;
+	font-weight: bold;
+    line-height: 22px;
+    color: $color-primary;
+}
+
+.product-box .d-box del.price {
+    color: $color-danger;
+    font-size: 18px;
+	font-weight: bold;
+    line-height: 22px;
 }

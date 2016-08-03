@@ -5,6 +5,7 @@ import { provideRouter, RouterConfig, ROUTER_DIRECTIVES } from '@angular/router'
 import { APP_BASE_HREF } from '@angular/common';
 import { Home } from './imports/home/home.ts';
 import { Catalog } from './imports/catalog/catalog.ts';
+import { Item } from './imports/item/item.ts';
 
 import template from './app.html';
 
@@ -20,7 +21,8 @@ class SquareMeter {
 
 const routes: RouterConfig = [
   { path: '', component: Home },
-  { path: 'catalog', component: Catalog }
+  { path: 'catalog', component: Catalog },
+  { path: 'item/:itemId', component: Item }
 ];
 
 const APP_ROUTER_PROVIDERS = [
