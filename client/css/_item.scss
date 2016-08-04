@@ -11,6 +11,11 @@
     position: relative;
 }
 
+.catalog-item .color-block {
+    padding: 20px 15px;
+}
+
+
 .catalog-item-desc .image-block {
 	padding: 20px 15px;
 }
@@ -34,28 +39,10 @@
 }
 
 .catalog-item-desc .description-body {
-	padding: 27px;
+	padding: 20px;
 }
 
-.catalog-item-desc .description-bottom  {
-    padding: 15px;
+.catalog-item-desc .description-bottom > .btn_c {
+	margin-bottom: 20px;
 }
 
-.catalog-item-desc .description-bottom {
-	padding: 15px 25px;
-}
-
-.catalog-item-desc .description-bottom .price {
-    color: $gray-dark;
-    display: block;
-    float: left;
-    font-size: 24px;
-    line-height: 40px;
-    margin: 0;
-    padding: 0;
-}
-
-.catalog-item-desc .description-bottom a.btn_c {
-    float: right;
-    margin: 0;
-}
