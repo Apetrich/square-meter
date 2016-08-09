@@ -9,6 +9,6 @@ import template from './constructor.html';
   directives: [ROUTER_DIRECTIVES]
 })
 
-export class Item {
+export class Constructor {
   constructor() {}
 }

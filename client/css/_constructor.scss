@@ -1,0 +1,27 @@
+.constructor {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.card-title {
+	font-family: 'CleanvertisingBlack';
+	text-transform: uppercase;
+}
+
+.list-group-item {
+	padding: 7px 25px;
+}
+
+.card-title .toggle-link:after  {
+    font-family: 'FontAwesome';
+    content: "\f0d7";    
+    float: right;        
+}
+
+.card-title .toggle-link.collapsed:after {
+    content: "\f0d8"; 
+}
+
+.card-title a {
+	display: block;
+}

@@ -6,6 +6,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { Home } from './imports/home/home.ts';
 import { Catalog } from './imports/catalog/catalog.ts';
 import { Item } from './imports/item/item.ts';
+import { Constructor } from './imports/constructor/constructor.ts';
 
 import template from './app.html';
 
@@ -22,7 +23,8 @@ class SquareMeter {
 const routes: RouterConfig = [
   { path: '', component: Home },
   { path: 'catalog', component: Catalog },
-  { path: 'item/:itemId', component: Item }
+  { path: 'item/:itemId', component: Item },
+  { path: 'constructor/:itemId', component: Constructor }
 ];
 
 const APP_ROUTER_PROVIDERS = [
