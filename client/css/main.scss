@@ -10,6 +10,7 @@
 @import "catalog";
 @import "item";
 @import "constructor";
+@import "contact";
 
 @font-face {
     font-family: 'CleanvertisingLight';
@@ -189,4 +190,30 @@ a.btn_c  :hover, a.btn_c  :focus {
     font-size: 18px;
 	font-weight: bold;
     line-height: 22px;
+}
+
+.btn-backto {
+    background: rgba(0, 0, 0, 0) url("/images/btns/back_to.png") no-repeat scroll center center;
+    color: #282727;
+    display: block;
+    font-family: "latoblack";
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 33px;
+    text-align: center;
+    width: 151px;background: rgba(0, 0, 0, 0) url("/images/btns/back_to.png") no-repeat scroll center center;
+    color: #282727;
+    display: block;
+    font-family: "latoblack";
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 33px;
+    text-align: center;
+    width: 151px;
+}
+
+.title {
+    padding-bottom: 30px;
 }
