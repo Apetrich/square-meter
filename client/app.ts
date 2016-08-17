@@ -8,6 +8,7 @@ import { Catalog } from './imports/catalog/catalog.ts';
 import { Item } from './imports/item/item.ts';
 import { Constructor } from './imports/constructor/constructor.ts';
 import { Contact } from './imports/contact/contact.ts';
+import { About } from './imports/about/about.ts';
 
 import template from './app.html';
 

@@ -1,7 +1,7 @@
 <section class="catalog container">
     <div class="title clearfix">
         <h2 class="pull-left">Каталог</h2>
-        <a class="btn-backto pull-right" [routerLink]="['home']">
+        <a class="btn-backto pull-right" [routerLink]="['/']">
             <span class="fa fa-arrow-circle-left"></span>
             На главную
         </a>
@@ -9,6 +9,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="product-box">
+                <span class="new-label">Новинка!</span>
                 <div class="box">
                     <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard1.jpg" alt="alt">
                     <div class="overlay">
@@ -22,13 +23,13 @@
                     <p>Для тех кто жевал, жует и будет жевать...</p>
                     <div class="product-box-bottom">
                         <span class="price">KZT 50000</span>
-                        <div class="pull-right">НОВИНКА</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="product-box">
+                <span class="sale-label">Скидка!</span>
                 <div class="box">
                     <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard2.jpg" alt="alt">
                     <div class="overlay">
@@ -62,7 +63,6 @@
                     <p>Для тех кто жевал, жует и будет жевать...</p>
                     <div class="product-box-bottom">
                         <span class="price">KZT 50000</span>
-                        <span class="price pull-right">ХИТ ПРОДАЖ</span>
                     </div>
                 </div>
             </div>

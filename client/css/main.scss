@@ -74,7 +74,7 @@ h2 {
 
 
 .btn_c {
-    background: #37bbec none repeat scroll 0 0;
+    background: $color-primary none repeat scroll 0 0;
     border: medium none;
     border-radius: 16px;
     color: #ffffff;
@@ -87,9 +87,8 @@ h2 {
     margin: 20px auto 0;
     position: relative;
     text-align: center;
-    text-shadow: -1px -1px 1px #2f8aab;
+    text-shadow: -1px -1px 1px $color-primary;
     width: 130px;
-	background: $color-primary none repeat scroll 0 0;
     text-shadow: none !important;
 }
 
@@ -97,7 +96,7 @@ a.btn_c {
 	text-decoration: none;
 }
 
-a.btn_c  :hover, a.btn_c  :focus {
+a.btn_c:hover, a.btn_c:focus {
 	color: #ffffff;
 }
 
@@ -132,6 +131,7 @@ a.btn_c  :hover, a.btn_c  :focus {
 }
 
 .product-box .box .overlay {
+    background: rgba(3, 50, 68, 0.1) none repeat scroll 0 0;
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -142,12 +142,62 @@ a.btn_c  :hover, a.btn_c  :focus {
 }
 
 .product-box:hover .box .overlay {
-	opacity: 1;
+    opacity: 1;
 }
 
-.product-box .box a.info_btn, .product-box .box a.cart_btn_1 {
-	// margin: -100px auto 10px;
-    // transition: all 0.5s ease 0s;
+.product-box .box .info_btn, .product-box .box .cart_btn_1 {
+    margin: -100px auto 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.product-box:hover .box .cart_btn_1 {
+    margin: 55px auto 10px;
+}
+
+.product-box:hover .box .info_btn {
+    margin: 100px auto 10px;
+}
+
+
+.product-box:hover .box .info_btn, .product-box:hover .box .cart_btn_1 {
+    transition: all 0.5s ease 0s;
+}
+
+.product-box {
+    overflow: hidden;
+    position: relative;
+}
+
+.new-label {
+    background: $color-new none repeat scroll 0 0;
+    color: white;
+    display: block;
+    font-family: 'CleanvertisingBlack';
+    left: -34px;
+    padding: 11px 0 7px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 16px;
+    transform: rotate(-45deg);
+    width: 140px;
+    z-index: 1;
+}
+
+.sale-label {
+    background: $color-sale none repeat scroll 0 0;
+    color: white;
+    display: block;
+    font-family: 'CleanvertisingBlack';
+    right: -34px;
+    padding: 11px 0 7px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 16px;
+    transform: rotate(45deg);
+    width: 140px;
+    z-index: 1;
 }
 
 .product-box .box a.info_btn:hover, .product-box .box a.cart_btn_1:hover {
@@ -194,18 +244,8 @@ a.btn_c  :hover, a.btn_c  :focus {
 
 .btn-backto {
     background: rgba(0, 0, 0, 0) url("/images/btns/back_to.png") no-repeat scroll center center;
-    color: #282727;
+    color: $gray-dark;
     display: block;
-    font-family: "latoblack";
-    font-size: 14px;
-    font-weight: normal;
-    height: 36px;
-    line-height: 33px;
-    text-align: center;
-    width: 151px;background: rgba(0, 0, 0, 0) url("/images/btns/back_to.png") no-repeat scroll center center;
-    color: #282727;
-    display: block;
-    font-family: "latoblack";
     font-size: 14px;
     font-weight: normal;
     height: 36px;
@@ -214,6 +254,21 @@ a.btn_c  :hover, a.btn_c  :focus {
     width: 151px;
 }
 
+.btn-backto:hover {
+    color: #373a3c;
+}
+
+a.btn-backto .fa {
+    color: $color-primary;
+    font-size: 14px;
+    line-height: 34px;
+    margin: 0 8px 0 0;
+}
+
 .title {
     padding-bottom: 30px;
+}
+
+.margined-section {
+    
 }
