@@ -1,25 +1,4 @@
-@media (max-width: 767px) {
-	.intro-section {
-		padding-top: 183px;
-	}
-}
-
-@media (max-width: 480px) {
-	.intro-section {
-		padding-top: 207px;
-	}
-}
-
-@media (max-width: 1280px) {
-	.carousel-caption {
-		display: none;
-	}
-	.carousel-controls {
-		display: none;
-	}
-}
-
-@media(min-width:767px) {
+@media (min-width:994px) {
 	.home-ideas {
 		.box-inn-1 {
 			left: 65px;
@@ -47,3 +26,141 @@
 		}
 	}
 }
+
+@media (max-width: 1280px) {
+	.carousel-caption {
+		display: none;
+	}
+	.carousel-controls {
+		display: none;
+	}
+}
+
+@media (max-width: 994px) {
+	.home-ideas {
+		.box-inn-1 {
+			left: 65px;
+			right: 65px;
+		}
+
+		.box-inn-2 {
+			left: 40px;
+			right: 40px;
+			font-size: 9px;
+			h2 {
+				font-size: 20px;
+			}
+		}
+
+		.box-inn-3 {
+			left: 30px;
+			right: 30px;
+			font-size: 9px;					
+			h5 {
+				font-size: 9px;
+			}
+		}
+
+		.box-inn-4 {
+			left: 40px;
+			right: 40px;
+		}
+
+		.box-inn-5 {
+			left: 30px;
+			right: 30px;
+			font-size: 9px;
+			h5 {
+				font-size: 9px;
+			}
+		}
+	}	
+}
+
+@media (max-width: 770px) {
+	.intro-section {
+		padding-top: 207px;
+	}
+
+	.home-ideas {
+		.box-inn-2 {
+			display: none;
+		}
+
+		.box-inn-3 {
+			display: none;
+		}
+
+		.box-inn-4 {
+			display: none;
+		}
+
+		.box-inn-5 {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 543px) {
+
+	.home-ideas {
+		.box-inn-1 {
+			left: 30px;
+			right: 30px;
+			font-size: 14px;
+			h2 {
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+
+		.box-inn-2 {
+			left: 30px;
+			right: 30px;
+			display: block;
+			font-size: 14px;
+			text-align: center;
+			h2 {
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+
+		.box-inn-3 {
+			left: 30px;
+			right: 30px;
+			display: block;
+			text-align: center;
+			font-size: 14px;
+			h5 {
+				font-size: 14px;
+			}
+		}
+
+		.box-inn-4 {
+			left: 30px;
+			right: 30px;
+			display: block;
+			font-size: 14px;
+			h2 {
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+
+		.box-inn-5 {
+			left: 30px;
+			right: 30px;
+			display: block;
+			font-size: 14px;
+			text-align: center;
+			h5 {
+				font-size: 14px;
+			}
+		}
+	}
+}
+

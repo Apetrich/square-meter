@@ -131,7 +131,6 @@
 }
 
 .home-ideas {
-    
     .box-inn-1 {
         @extend .box-inn;
         bottom: 45px;
@@ -145,7 +144,6 @@
 
     .box-inn-3 {
         @extend .box-inn;
-        text-align: center;
         top: 24px;
     }
 
@@ -159,4 +157,9 @@
         @extend .box-inn;
         bottom: 45px;
     }
+
+    .img-thumbnail {
+        width: 100%;
+    }
 }
+

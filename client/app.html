@@ -38,10 +38,10 @@
             <div class="nav_bottom_right">
                 <ul>
                     <li class="menubtn">
-                        <a href="#">
+                        <a (click)="toggleCart()">
                             <span class="fa fa-shopping-cart"></span>
                         </a>
-                        <div class="menu_c cart_menu">
+                        <div class="menu_c cart_menu" *ngIf="isCartVisible">
                             <div class="menu_title clearfix">
                                 <h4>Корзина</h4>
                             </div>
@@ -63,7 +63,7 @@
                                 </ul>
                             </div>
                             <div class="cheout_row clearfix">
-                                <a class="checkout-btn" href="Checkout.html">Заказать</a>
+                                <a class="checkout-btn" [routerLink]="['/checkout']">Заказать</a>
                             </div>
                         </div>
                     </li>

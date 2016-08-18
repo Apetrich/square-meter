@@ -9,6 +9,7 @@ import { Item } from './imports/item/item.ts';
 import { Constructor } from './imports/constructor/constructor.ts';
 import { Contact } from './imports/contact/contact.ts';
 import { About } from './imports/about/about.ts';
+import { Checkout } from './imports/checkout/checkout.ts';
 
 import template from './app.html';
 
@@ -19,8 +20,17 @@ import template from './app.html';
  })
 
 class SquareMeter {
+
+  public isCartVisible: boolean;
+
   constructor () {
+    this.isCartVisible = false;
   }
+
+  public toggleCart() {
+    this.isCartVisible = !this.isCartVisible;
+  }
+
 }
 
 const routes: RouterConfig = [
@@ -28,6 +38,7 @@ const routes: RouterConfig = [
   { path: 'about', component: About },
   { path: 'contact', component: Contact },
   { path: 'catalog', component: Catalog },
+  { path: 'checkout', component: Checkout },
   { path: 'item/:itemId', component: Item },
   { path: 'constructor/:itemId', component: Constructor }
 ];

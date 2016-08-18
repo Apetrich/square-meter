@@ -131,7 +131,6 @@ nav .nav_bottom .menu_c {
     background: #fff none repeat scroll 0 0;
     border-radius: 5px;
     box-shadow: 0 2px 2px rgba(11, 25, 28, 0.1);
-    display: none;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -144,6 +143,14 @@ nav .nav_bottom .menu_title {
     border-bottom: 1px solid #efefef;
     padding: 15px 25px;
 }
+
+nav .nav_bottom .menubtn a {
+    cursor: pointer;
+}
+
+nav .navbar-nav a.dropdown-toggle {
+    cursor: pointer;
+} 
 
 nav .nav_bottom .cart_menu .cart_row {
     display: table;
@@ -269,17 +276,17 @@ nav .nav_bottom .dropdown {
     position: static;
 }
 
-.menu_cshow .menu_c {
-    opacity: 1;
-    visibility: visible;
-}
+// .menu_cshow .menu_c {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
-.menu_c {
-    display: block !important;
-    opacity: 0;
-    transition: all 0.4s ease-in-out 0s;
-    visibility: hidden;
-}
+// .menu_c {
+//     display: block !important;
+//     opacity: 0;
+//     transition: all 0.4s ease-in-out 0s;
+//     visibility: hidden;
+// }
 
 .brand {
 	float: left;
