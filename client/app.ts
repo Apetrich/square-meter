@@ -25,6 +25,7 @@ class SquareMeter {
 
 const routes: RouterConfig = [
   { path: '', component: Home },
+  { path: 'about', component: About },
   { path: 'contact', component: Contact },
   { path: 'catalog', component: Catalog },
   { path: 'item/:itemId', component: Item },

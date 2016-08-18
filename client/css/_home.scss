@@ -123,3 +123,40 @@
     text-align: center;
 }
 
+.box-inn {
+    background: rgba(245, 245, 245, 0.8) none repeat scroll 0 0;
+    z-index: 3;
+    position: absolute;
+    padding: 20px;
+}
+
+.home-ideas {
+    
+    .box-inn-1 {
+        @extend .box-inn;
+        bottom: 45px;
+        text-align: center;
+    }
+    
+    .box-inn-2 {
+        @extend .box-inn;
+        top: 60px;
+    }
+
+    .box-inn-3 {
+        @extend .box-inn;
+        text-align: center;
+        top: 24px;
+    }
+
+    .box-inn-4 {
+        @extend .box-inn;
+        text-align: center;
+        top: 45px;
+    }
+
+    .box-inn-5 {
+        @extend .box-inn;
+        bottom: 45px;
+    }
+}
