@@ -7,9 +7,10 @@
         </a>
     </div>
     <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div *ngFor="let product of products" class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="product-box">
-                <span class="new-label">Новинка!</span>
+                <span [hidden]="!product.is_new" class="new-label">Новинка!</span>
+                <span [hidden]="!product.sale_price" class="sale-label">Скидка!</span>
                 <div class="box">
                     <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard1.jpg" alt="alt">
                     <div class="overlay">
@@ -18,146 +19,15 @@
                 </div>
                 <div class="d-box">
                     <h5>
-                        <a [routerLink]="['/item', '1']">Кухня "Жора"</a>
+                        <a [routerLink]="['/item', '1']">{{product.name}}</a>
                     </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
+                    <p>Модульная кухня</p>
+                    <div [hidden]="!product.sale_price" class="product-box-bottom">
+                        <del class="price">{{product.currency}} {{product.cost_price}}</del>
+                        <span class="price pull-right">{{product.currency}} {{product.sale_price}}</span>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <span class="sale-label">Скидка!</span>
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard2.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" href="Item.html">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <del class="price">KZT 50000</del>
-                        <span class="price pull-right">KZT 25000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard3.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" href="Item.html">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard4.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" [routerLink]="['catalog']">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard5.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" href="Item.html">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard6.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" href="Item.html">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard7.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" href="Item.html">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="product-box">
-                <div class="box">
-                    <img width="259" height="200" draggable="false" src="/images/standards_kitchens/standard8.jpg" alt="alt">
-                    <div class="overlay">
-                        <a class="btn_c info_btn" [routerLink]="['catalog']">Подробнее</a>
-                    </div>
-                </div>
-                <div class="d-box">
-                    <h5>
-                        <a href="#">Кухня "Жора"</a>
-                    </h5>
-                    <p>Для тех кто жевал, жует и будет жевать...</p>
-                    <div class="product-box-bottom">
-                        <span class="price">KZT 50000</span>
+                    <div [hidden]="product.sale_price" class="product-box-bottom">
+                        <span class="price">{{product.currency}} {{product.cost_price}}</span>
                     </div>
                 </div>
             </div>
