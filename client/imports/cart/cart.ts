@@ -26,10 +26,15 @@ export class Cart implements OnInit {
   }
 
   public toggleCart() {
+   
+
     this.isCartVisible = !this.isCartVisible;
+
+     alert(this.isCartVisible);
   }
 
   ngOnInit() {
     this.items = Items.find();
+    alert(this.items);
   }
 }
