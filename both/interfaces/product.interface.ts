@@ -12,4 +12,5 @@ export interface Product {
 
 export interface ProductItem extends Product  {
   quantity: number;
+  user_token: string;
 }

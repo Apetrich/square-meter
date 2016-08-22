@@ -36,38 +36,7 @@
                 </a>		
             </div>
             <div class="nav_bottom_right">
-                <ul>
-                    <li class="menubtn">
-                        <a (click)="toggleCart()">
-                            <span class="fa fa-shopping-cart"></span>
-                        </a>
-                        <div class="menu_c cart_menu" *ngIf="isCartVisible">
-                            <div class="menu_title clearfix">
-                                <h4>Корзина</h4>
-                            </div>
-                            <div class="cart_row">
-                                <ul>
-                                    <li>
-                                        <div class="pro_img">
-                                            <span></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h5>Стул обыкновенный</h5>
-                                        <p>Только сядь....</p>
-                                    </li>
-                                    <li>
-                                        <div class="price">$15.50</div>
-                                        <a class="del_btn" href="#"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cheout_row clearfix">
-                                <a class="checkout-btn" [routerLink]="['/checkout']">Заказать</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <cart></cart>
             </div>
             <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
                 &#9776;

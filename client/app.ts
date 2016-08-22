@@ -10,27 +10,17 @@ import { Constructor } from './imports/constructor/constructor.ts';
 import { Contact } from './imports/contact/contact.ts';
 import { About } from './imports/about/about.ts';
 import { Checkout } from './imports/checkout/checkout.ts';
+import { Cart } from './imports/cart/cart.ts';
 
 import template from './app.html';
 
 @Component({
    selector: 'app',
    template,
-   directives: [ROUTER_DIRECTIVES]
+   directives: [ROUTER_DIRECTIVES, Cart]
  })
 
 class SquareMeter {
-
-  public isCartVisible: boolean;
-
-  constructor () {
-    this.isCartVisible = false;
-  }
-
-  public toggleCart() {
-    this.isCartVisible = !this.isCartVisible;
-  }
-
 }
 
 const routes: RouterConfig = [

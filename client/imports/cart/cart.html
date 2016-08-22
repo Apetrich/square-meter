@@ -1,0 +1,32 @@
+<ul class="cart_block">
+    <li class="menubtn">
+        <a (click)="toggleCart()">
+            <span class="fa fa-shopping-cart"></span>
+        </a>
+        <div class="menu_c cart_menu" *ngIf="isCartVisible">
+            <div class="menu_title clearfix">
+                <h4>Корзина</h4>
+            </div>
+            <div *ngFor="let item of items" class="cart_row">
+                <ul>
+                    <li>
+                        <div class="pro_img">
+                            <span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>{{item.name}}</h5>
+                        <p>Модульная кухня</p>
+                    </li>
+                    <li>
+                        <div class="price">{{product.currency}} {{product.cost_price}}</div>
+                        <a class="del_btn" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cheout_row clearfix">
+                <a class="checkout-btn" [routerLink]="['/checkout']">Заказать</a>
+            </div>
+        </div>
+    </li>
+</ul>

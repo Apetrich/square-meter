@@ -1,0 +1,136 @@
+.cart_menu {
+    width: 670px;
+}
+
+.cart_menu .cart_row {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cart_menu ul {
+    display: table-row;
+}
+
+.cart_menu ul li {
+    border-bottom: 1px solid #efefef;
+    display: table-cell;
+    float: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+
+.cart_menu ul li:nth-child(1) {
+    padding-left: 25px;
+    width: 20%;
+}
+
+.cart_menu ul li:nth-child(2) {
+    width: 54%;
+}
+
+.cart_menu ul li:nth-child(3) {
+    padding-right: 25px;
+    width: 26%;
+}
+
+.cart_menu ul li .pro_img {
+    border: 1px solid #efefef;
+    height: 80px;
+    padding: 4px;
+    width: 80px;
+}
+
+.cart_menu ul li .pro_img span {
+    background: #dcdcdc none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.cart_menu .cheout_row {
+    padding: 25px;
+}
+
+.cart_menu .checkout-btn {
+    border: medium none;
+    border-radius: 18px;
+    color: #fff;
+    display: block;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: -1px -1px 1px #2f8aab;
+    width: 122px;
+}
+
+.cart_menu ul li .price {
+    float: left;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.cart_menu ul li .del_btn {
+    background: rgba(0, 0, 0, 0) url("../images/delete_icon.png") no-repeat scroll center center;
+    display: block;
+    float: right;
+    height: 30px;
+    width: 30px;
+}
+
+
+ ul.cart_block {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ ul.cart_block > li {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+}
+
+ ul.cart_block > li > a {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 #c9cbcb, 0 1px 0 #fff inset;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 30px;
+}
+
+ ul.cart_block > li > a *::after {
+    background-color: #edefef;
+    border-radius: 50%;
+    bottom: -3px;
+    box-shadow: 0 1px #fff, 0 1px #c9cbcb inset;
+    content: "";
+    display: block;
+    left: -3px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: -1;
+}
+
+ ul.cart_block > li > a span {
+    color: #282727;
+    font-size: 15px;
+    line-height: 30px;
+}

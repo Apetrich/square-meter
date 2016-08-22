@@ -1,10 +1,12 @@
-import {Meteor} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import { Products } from '../both/collections/products.collection';
 
 Meteor.startup(() => {
 
-  if (Products.find().count() === 0) {
-    
+  if (Products.find().count() == 0) {
+
+  //alert(Products.find().count() == 0);
+
     const products = [
       {
         name: "Кухня \"Жора\"",
