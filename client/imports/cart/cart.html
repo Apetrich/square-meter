@@ -19,12 +19,13 @@
                         <p>Модульная кухня</p>
                     </li>
                     <li>
-                        <div class="price">{{item.currency}} {{item.cost_price}}</div>
-                        <a class="del_btn" href="#"></a>
+                        <div class="price">{{item.currency}} {{item.cost_price*item.quantity}}</div>
+                        <a class="del_btn" (click)="removeItem(item)"></a>
                     </li>
                 </ul>
             </div>
             <div class="cheout_row clearfix">
+                Всего в корзине {{amount}} на сумму {{sum}}
                 <a class="checkout-btn" [routerLink]="['/checkout']">Заказать</a>
             </div>
         </div>

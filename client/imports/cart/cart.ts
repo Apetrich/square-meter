@@ -15,26 +15,30 @@ export class Cart implements OnInit {
 
   items: Mongo.Cursor<ProductItem>;
   public isCartVisible: boolean;
+  public amount: number;
+  public sum: number;
 
   constructor () {
     this.isCartVisible = false;
     if(localStorage.getItem("user_id") == null) {
         localStorage.setItem("user_id", Random.id());
     }
-
-    alert(localStorage.getItem("user_id"));
   }
 
   public toggleCart() {
-   
-
     this.isCartVisible = !this.isCartVisible;
-
-     alert(this.isCartVisible);
   }
 
-  ngOnInit() {
-    this.items = Items.find();
-    alert(this.items);
+  public removeItem(item) {
+    Items.remove(item._id);
+  }
+
+
+  ngOnInit() {    
+    this.sum = 0;
+
+    this.items = Items.find({}, {limit: 2});
+    Items.find().forEach(item => this.sum += item.quantity * item.cost_price);
+    this.amount = Items.find({}).count();
   }
 }
